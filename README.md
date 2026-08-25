@@ -1,7 +1,7 @@
 
 > **Como usar este template:** este repositório é a base para o Trabalho de Especificação (T1) da disciplina de Construção de Software (PUCRS). Preencha as seções abaixo e os documentos em `docs/` com as informações do seu projeto, apague este aviso quando terminar e publique a documentação com o GitHub Pages (workflow já configurado em `.github/workflows/deploy.yml`).
 
-# [MoveUni]
+# MoveUni
 
 ### Entenda nossa proposta
 [Descreva em um ou dois parágrafos o problema que o projeto resolve, para quem é destinado e qual a proposta de valor da solução.]
@@ -10,7 +10,7 @@
 
 | Membro | E-mail | Github | Papel | Matrícula |
 |--------|--------|--------|-------|-----------|
-| [Gabriel Mendonça] | [tavares.gabriel@pucrs.br] | [MagiMahou](https://github.com/MagiMahou) | [papel] | [23111360] |
+| Gabriel Mendonça | tavares.gabriel@pucrs.br | MagiMahou (https://github.com/MagiMahou) | [papel] | 23111360 |
 
 ### Conheça nossa documentação
 * [Documentação completa](https://profschardosim.github.io/construcao-2026.2-t1/)
