@@ -11,7 +11,7 @@ Seria feito também um sistema de nível (ex: iniciante, intermediário, avança
 
 | Membro | E-mail | Github | Papel | Matrícula |
 |--------|--------|--------|-------|-----------|
-| Gabriel Mendonça | tavares.gabriel@pucrs.br | MagiMahou (https://github.com/MagiMahou) | [papel] | 23111360 |
+| Gabriel Mendonça | tavares.gabriel@pucrs.br | MagiMahou(https://github.com/MagiMahou) | [papel] | 23111360 |
 
 ### Conheça nossa documentação
 * [Documentação completa](https://profschardosim.github.io/construcao-2026.2-t1/)
