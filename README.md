@@ -10,7 +10,7 @@
 
 | Membro | E-mail | Github | Papel | Matrícula |
 |--------|--------|--------|-------|-----------|
-| [Nome do integrante] | [email@pucrs.br] | [usuario-github](https://github.com/usuario-github) | [papel] | [matrícula] |
+| [Gabriel Mendonça] | [tavares.gabriel@pucrs.br] | [MagiMahou](https://github.com/MagiMahou) | [papel] | [23111360] |
 
 ### Conheça nossa documentação
 * [Documentação completa](https://profschardosim.github.io/construcao-2026.2-t1/)
