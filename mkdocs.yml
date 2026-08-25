@@ -2,13 +2,10 @@ site_name: Documentação
 
 copyright: Logo and Favicon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
-repo_name: fga-eps-mds/2021-2-SysArq-Doc
-repo_url: https://github.com/fga-eps-mds/2021-2-SysArq-Doc
+repo_name: profschardosim/construcao-2026.2-t1
+repo_url: https://github.com/profschardosim/construcao-2026.2-t1
 
 edit_uri: ""
-
-extra_css:
-  - stylesheets/extra.css
 
 theme:
   name: material
@@ -23,14 +20,14 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-  
+
 extra_css:
   - stylesheets/extra.css
-  
+
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/fga-eps-mds/2021-2-SysArq-Doc
+      link: https://github.com/profschardosim/construcao-2026.2-t1
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -39,15 +36,7 @@ markdown_extensions:
 
 nav:
   - Artefatos:
-    - Início: documentation.md
-    - Documento de arquitetura: doc_arquitetura.md
-    - Documento de visão: doc_visao.md
+    - Início: index.md
+    - Documento de Requisitos: requirements.md
+    - Documento de Arquitetura: architecture.md
     - Identidade Visual: visual_id.md
-  - Planejamento:
-    - Comunicacao: planejamento/comunicacao.md
-    - Custos: planejamento/custos.md
-    - Riscos: planejamento/riscos.md
-    - Tempo: planejamento/tempo.md    
-  - Políticas do Repositório: 
-    - Como contribuir: contributing.md
-    - Código de conduta: code_of_conduct.md

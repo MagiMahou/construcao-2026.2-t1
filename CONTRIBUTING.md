@@ -1,3 +1,8 @@
+**Histórico de Revisão**
+
+|Data|Versão|Descrição|Autor|
+| - | - | - | - |
+|[dd/mm/aaaa]|0.1|Versão inicial|[Nome do autor]|
 
 ## Como contribuir?
 * Navegue pelas issues criadas no repositório para entender o que o projeto está precisando no momento.
