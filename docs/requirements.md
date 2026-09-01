@@ -126,4 +126,4 @@ Requisitos não funcionais descrevem **qualidades e restrições técnicas** do 
 
 ## **6. Protótipos**
 
-Como o projeto é fictício e ainda não possui protótipos finalizados, esta seção pode ser complementada futuramente com wireframes, telas de baixa fidelidade ou links para protótipos no Figma.
+Atualmente só é possivel visualizar as telas proposta para o aplicativo, que foi desenvolvida na ferramenta Figma.
