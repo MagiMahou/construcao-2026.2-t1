@@ -56,10 +56,18 @@ Requisitos funcionais descrevem **o que o sistema deve fazer**.
 
 | ID | Descrição | Prioridade |
 | -- | --------- | :--------: |
-| RF01 | [O sistema deve permitir que o usuário...] | Alta |
-| RF02 | [O sistema deve...] | Média |
+| RF01 | O sistema deve permitir que o usuário se cadastre e crie um perfil informando os esportes que pratica. | Alta |
+| RF02 | O sistema deve permitir que o usuário marque sua disponibilidade de dias e horários. | Alta |
+| RF03 | O sistema deve agrupar automaticamente os usuários disponíveis no mesmo esporte e horário para formar times/grupos. | Alta |
+| RF04 | O sistema deve fechar automaticamente uma partida/grupo quando o número mínimo de participantes necessário for atingido (ex.: 2 times completos para um jogo, ou grupo mínimo para uma corrida). | Alta |
+| RF05 | Caso existam duas ou mais atividades possíveis no mesmo horário, o sistema deve priorizar a atividade com o maior número de interessados. | Média |
+| RF06 | O sistema deve permitir que o usuário informe seu nível de habilidade (iniciante, intermediário, avançado) para cada esporte praticado. | Alta |
+| RF07 | O sistema deve tentar formar partidas com usuários de nível semelhante; quando isso não for possível, deve exibir o nível médio da partida a todos os participantes. | Alta |
+| RF08 | O sistema deve exibir um calendário com os eventos/partidas já marcados. | Alta |
+| RF09 | O sistema deve permitir que um usuário se inclua em um evento já existente que ainda tenha vagas disponíveis. | Alta |
+| RF10 | O sistema deve notificar o usuário quando uma partida ou grupo for fechado/confirmado. | Média |
 
-> **Prioridade:** Alta, Média ou Baixa — defina o critério utilizado pela equipe (ex.: MoSCoW).
+> **Prioridade:** Alta, Média ou Baixa, definida por impacto na proposta central do produto (fechar partidas/grupos automaticamente por disponibilidade e nível) — requisitos essenciais ao fluxo de matchmaking são Alta; ajustes de experiência (notificações, priorização) são Média.
 
 ## **4. Requisitos Não Funcionais**
 
@@ -67,9 +75,12 @@ Requisitos não funcionais descrevem **qualidades e restrições técnicas** do 
 
 | ID | Categoria | Descrição | Prioridade |
 | -- | --------- | --------- | :--------: |
-| RNF01 | [Desempenho] | [O sistema deve responder a requisições em até X segundos.] | Alta |
-| RNF02 | [Segurança] | [O sistema deve autenticar os usuários via...] | Alta |
-| RNF03 | [Usabilidade] | [O sistema deve...] | Média |
+| RNF01 | Desempenho | O sistema deve calcular e sugerir o agrupamento de disponibilidades em até 3 segundos após a marcação do usuário. | Alta |
+| RNF02 | Segurança | O sistema deve autenticar os usuários por e-mail institucional e senha, com armazenamento de senha criptografado. | Alta |
+| RNF03 | Usabilidade | O sistema deve ser mobile-first, permitindo marcar disponibilidade em no máximo 3 toques a partir da tela inicial. | Alta |
+| RNF04 | Disponibilidade | O sistema deve estar disponível 99% do tempo, considerando uso concentrado em horários de intervalo entre aulas. | Média |
+| RNF05 | Compatibilidade | O sistema deve ser acessível via navegador em dispositivos Android e iOS, sem exigir instalação de aplicativo nativo. | Média |
+| RNF06 | Escalabilidade | O sistema deve suportar o crescimento do número de usuários simultâneos sem degradar o tempo de resposta do matchmaking. | Baixa |
 
 ## **5. Regras de Negócio**
 
