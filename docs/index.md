@@ -1,6 +1,6 @@
 <h1 style="text-align: center">Início</h1>
 
-**Documentação de especificação de [Nome do Projeto], desenvolvida para a disciplina de Construção de Software.**
+**Documentação de especificação do UniMove, desenvolvida para a disciplina de Construção de Software.**
 
 ## Sobre a documentação
 Criar um software que encontre estudantes que pratiquem esportes e marcar jogos com eles, onde cada estudante marca sua disponibilidade e os esportes que joga, com isso, se fechar 2 times para um jogo, ou no caso da corrida, fechar um grupo para correr, ele marca aquele horário, escolher a atividade com mais pessoas caso tenham 2 possíveis no mesmo horário.
