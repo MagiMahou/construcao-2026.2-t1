@@ -9,10 +9,10 @@
 ## **1. Introdução**
 
 ### **1.1 Finalidade**
-Este documento apresenta a arquitetura de software do **MoveUni**, um aplicativo fictício voltado para estudantes universitários que desejam encontrar colegas para praticar esportes e organizar partidas ou grupos de atividade física. O objetivo é registrar as decisões arquiteturais, o estilo de organização do sistema, suas restrições técnicas e a forma como o código e os dados são estruturados.
+Este documento apresenta a arquitetura de software do **MoveUni**, um aplicativo voltado para estudantes universitários que desejam encontrar colegas para praticar esportes e organizar partidas ou grupos de atividade física. O objetivo é registrar as decisões arquiteturais, o estilo de organização do sistema, suas restrições técnicas e a forma como o código e os dados são estruturados.
 
 ### **1.2 Escopo**
-O escopo deste documento abrange a visão arquitetural da solução como um todo, incluindo organização lógica, restrições de tecnologia, visão de dados, tamanho esperado e atributos de qualidade. Ele deve ser seguido principalmente pelos desenvolvedores do projeto e por qualquer pessoa responsável por evoluir a documentação ou implementar novas funcionalidades, de modo a manter a consistência da solução.
+O escopo deste documento abrange a visão arquitetural da solução como um todo, incluindo organização lógica, restrições de tecnologia, visão de dados, tamanho esperado e atributos de qualidade.
 
 ### **1.3 Definições, Acrônimos e Abreviações**
 
@@ -31,7 +31,7 @@ Este documento está organizado em seis partes principais: a representação da 
 
 ## **2. Representação da Arquitetura**
 
-O MoveUni adota uma **arquitetura cliente-servidor em monólito modular**, adequada para um aplicativo fictício de escopo acadêmico e evolução gradual. Essa escolha simplifica o desenvolvimento, facilita a documentação e reduz a complexidade operacional, ao mesmo tempo em que permite separar bem as responsabilidades internas do sistema.
+O MoveUni adota uma **arquitetura cliente-servidor em monólito modular**, ideal para um aplicativo acadêmico de evolução gradual. Essa escolha simplifica o desenvolvimento, facilita a documentação e reduz a complexidade operacional, ao mesmo tempo em que permite separar bem as responsabilidades internas do sistema.
 
 Na prática, o sistema é pensado como uma aplicação web/mobile-first consumida por navegadores, com uma camada de apresentação, uma camada de regras de negócio e uma camada de persistência de dados. Essa estrutura é suficiente para lidar com funcionalidades como cadastro, disponibilidade, matchmaking, calendário e notificações.
 
@@ -83,7 +83,7 @@ Como o repositório atual é focado na documentação, a organização lógica d
 - `CONTRIBUTING.md`: regras de contribuição, branches e commits.
 - `mkdocs.yml`: configuração da navegação, tema e publicação da documentação.
 
-Caso o aplicativo seja implementado futuramente no mesmo repositório, uma estrutura sugerida seria:
+O aplicativo possui a seguinte estrutura:
 
 - `src/` ou `app/`: código-fonte principal da aplicação.
 - `app/models/`: entidades e regras de domínio.
