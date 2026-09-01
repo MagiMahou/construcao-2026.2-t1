@@ -20,17 +20,4 @@ Seria feito também um sistema de nível (ex: iniciante, intermediário, avança
 
 ---
 
-## Como Contribuir
 
-### 1. Como começar
-
-- Para contribuir no projeto é recomendado abrir as issues existentes e o backlog do produto para entender o que o projeto precisa atualmente.
-- Se você perceber que o seu problema ainda não foi documentado crie uma issue, porém priorize as já existentes.
-
-### 2. Orientações
-
-- Se você for um colaborador externo, dê um fork no projeto.
-- Issues só poderão ser criadas com os [templates de issue](.github/ISSUE_TEMPLATE) especificados no repositório.
-- A criação de branches deve seguir a política de branches.
-- No desenvolvimento, usar nossa política de commits.
-- As políticas de branches e de commits podem ser encontradas no arquivo sobre [contribuição](CONTRIBUTING.md).
