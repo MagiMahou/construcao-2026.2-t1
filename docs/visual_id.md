@@ -8,7 +8,7 @@
 
 ## Cores
 
-[Paleta de cores](docs/stylesheets/assets/Telas/Paleta_de_Cores.png)]
+[Paleta de cores](https://github.com/MagiMahou/construcao-2026.2-t1/blob/d648227dedaf819ab759d79bfc47d3d1edf87c7e/docs/stylesheets/assets/Telas/Paleta_de_Cores.png)
 
 #### Cores principais
 [#2A2C38] - Fundo das telas
