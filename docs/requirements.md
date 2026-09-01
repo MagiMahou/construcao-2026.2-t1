@@ -32,7 +32,17 @@
 [Resuma, em alto nível, as principais funcionalidades do sistema.]
 
 ### **2.3 Características dos Usuários**
-[Descreva os perfis/personas que utilizarão o sistema e seu nível de conhecimento técnico.]
+
+Os usuários do MoveUni são estudantes universitários com familiaridade básica com aplicativos de celular, sem necessidade de conhecimento técnico avançado. Foram identificadas três personas principais:
+
+**Persona 1 — O Calouro Casual**
+Lucas Andrade, 19 anos, estudante do 1º semestre. Não tem grupo fixo para praticar esporte e tem disponibilidade irregular entre aulas. Busca encontrar pessoas de nível parecido para jogar sem precisar organizar tudo manualmente em grupos de WhatsApp.
+
+**Persona 2 — A Atleta Competitiva**
+Marina Costa, 22 anos, estudante do 6º semestre e atleta de vôlei. Quer jogos de nível avançado e se frustra com partidas "misturadas" onde a diferença de nível atrapalha. Precisa saber o nível médio da partida antes de entrar.
+
+**Persona 3 — O Organizador de Corrida**
+Rafael Souza, 24 anos, mestrando, corre diariamente. Hoje depende de divulgar manualmente o horário em vários canais. Quer marcar um evento no calendário e deixar que outros estudantes se incluam diretamente, sem precisar de novo convite.
 
 ### **2.4 Restrições**
 [Liste restrições técnicas, legais, de negócio ou de prazo que limitam as soluções possíveis.]
