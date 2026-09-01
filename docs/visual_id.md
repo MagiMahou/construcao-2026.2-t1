@@ -8,7 +8,7 @@
 
 ## Cores
 
-[Paleta de cores](Telas/Paleta_de_Cores.png)`]
+[Paleta de cores](docs/stylesheets/assets/Telas/Paleta_de_Cores.png)]
 
 #### Cores principais
 [#2A2C38] - Fundo das telas
