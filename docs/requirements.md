@@ -4,32 +4,49 @@
 
 |Data|Versão|Descrição|Autor|
 | - | - | - | - |
-|[dd/mm/aaaa]|0.1|Versão inicial|[Nome do autor]|
+|01/09/2026|0.1|Versão inicial preenchida com os requisitos do MoveUni|Gabriel Mendonça e Timóteo Stifft|
 
 ## **1. Introdução**
 
 ### **1.1 Propósito**
-[Explique o objetivo deste documento: especificar os requisitos funcionais e não funcionais do sistema [Nome do Projeto], servindo de referência para o desenvolvimento e a validação da solução.]
+Este documento tem como objetivo especificar os requisitos funcionais e não funcionais do sistema **MoveUni**, servindo como referência para desenvolvimento, validação e futuras evoluções da solução.
 
 ### **1.2 Escopo**
-[Descreva, em poucas frases, o que o sistema [Nome do Projeto] faz, qual problema resolve e para quem é destinado.]
+O MoveUni é um aplicativo fictício voltado para estudantes universitários que desejam encontrar colegas para praticar esportes, registrar disponibilidade, organizar partidas e entrar em eventos já existentes. O sistema busca reduzir a organização manual em grupos de mensagens e facilitar encontros esportivos por nível e horário.
 
 ### **1.3 Definições, Acrônimos e Abreviações**
 
 |Termo|Definição|
 | - | - |
-|[Termo/Sigla]|[Definição]|
+|Matchmaking|Processo de agrupar usuários com disponibilidade, esporte e nível compatíveis|
+|RN|Requisito de Negócio|
+|RF|Requisito Funcional|
+|RNF|Requisito Não Funcional|
+|Usuário|Estudante cadastrado no MoveUni|
+|Evento|Partida, treino ou grupo esportivo criado no sistema|
 
 ### **1.4 Referências**
-[Liste os documentos e fontes utilizados na elicitação dos requisitos — ex.: entrevistas com stakeholders, documento de arquitetura, normas aplicáveis.]
+- README.md do repositório `MagiMahou/construcao-2026.2-t1`
+- `docs/architecture.md`
+- `docs/index.md`
+- `docs/visual_id.md`
+- Contribuições da equipe e entendimento do domínio do projeto MoveUni
 
 ## **2. Descrição Geral**
 
 ### **2.1 Perspectiva do Produto**
-[Descreva se o sistema é novo, se substitui outro ou se integra a sistemas já existentes.]
+O MoveUni é um sistema novo, criado para fins acadêmicos, que não substitui uma solução existente. A proposta é centralizar a organização de atividades esportivas entre estudantes, combinando agenda, nível de habilidade e agrupamento automático.
 
 ### **2.2 Funções do Produto**
-[Resuma, em alto nível, as principais funcionalidades do sistema.]
+Em alto nível, o sistema deve:
+- permitir cadastro e autenticação de usuários;
+- registrar esportes praticados e nível de habilidade;
+- permitir informar disponibilidade por dia e horário;
+- sugerir e montar grupos/partidas automaticamente;
+- fechar eventos quando atingir a quantidade mínima de participantes;
+- exibir calendário de eventos;
+- permitir entrada em eventos já criados, se houver vagas;
+- notificar usuários sobre confirmações e alterações relevantes.
 
 ### **2.3 Características dos Usuários**
 
@@ -45,10 +62,18 @@ Marina Costa, 22 anos, estudante do 6º semestre e atleta de vôlei. Quer jogos 
 Rafael Souza, 24 anos, mestrando, corre diariamente. Hoje depende de divulgar manualmente o horário em vários canais. Quer marcar um evento no calendário e deixar que outros estudantes se incluam diretamente, sem precisar de novo convite.
 
 ### **2.4 Restrições**
-[Liste restrições técnicas, legais, de negócio ou de prazo que limitam as soluções possíveis.]
+- A solução deve ser mobile-first.
+- A autenticação deve usar e-mail institucional e senha criptografada.
+- A aplicação deve funcionar em navegadores modernos em Android e iOS.
+- O tempo de resposta do agrupamento automático deve ser curto o suficiente para uso em tempo real.
+- O sistema será tratado como fictício e acadêmico, portanto pode assumir um escopo enxuto e evolutivo.
 
 ### **2.5 Suposições e Dependências**
-[Liste suposições feitas durante a elicitação dos requisitos e dependências externas do projeto.]
+- Assume-se que os estudantes possuem acesso à internet e a um e-mail institucional válido.
+- Assume-se que os dados de nível e disponibilidade são informados corretamente pelo usuário.
+- O sistema depende de um banco de dados relacional para persistência dos dados.
+- O envio de notificações pode depender de serviços externos, caso seja implementado futuramente.
+- O calendário do sistema pode ser integrado a notificações internas sem depender de integrações complexas.
 
 ## **3. Requisitos Funcionais**
 
@@ -66,8 +91,10 @@ Requisitos funcionais descrevem **o que o sistema deve fazer**.
 | RF08 | O sistema deve exibir um calendário com os eventos/partidas já marcados. | Alta |
 | RF09 | O sistema deve permitir que um usuário se inclua em um evento já existente que ainda tenha vagas disponíveis. | Alta |
 | RF10 | O sistema deve notificar o usuário quando uma partida ou grupo for fechado/confirmado. | Média |
+| RF11 | O sistema deve permitir que o usuário visualize e edite seu perfil esportivo e sua disponibilidade. | Média |
+| RF12 | O sistema deve permitir filtrar eventos por esporte, nível e faixa de horário. | Média |
 
-> **Prioridade:** Alta, Média ou Baixa, definida por impacto na proposta central do produto (fechar partidas/grupos automaticamente por disponibilidade e nível) — requisitos essenciais ao fluxo de matchmaking são Alta; ajustes de experiência (notificações, priorização) são Média.
+> **Prioridade:** Alta, Média ou Baixa, definida por impacto na proposta central do produto (fechar partidas/grupos automaticamente por disponibilidade e nível). Requisitos essenciais ao fluxo principal são Alta; ajustes de experiência e filtros são Média.
 
 ## **4. Requisitos Não Funcionais**
 
@@ -81,15 +108,22 @@ Requisitos não funcionais descrevem **qualidades e restrições técnicas** do 
 | RNF04 | Disponibilidade | O sistema deve estar disponível 99% do tempo, considerando uso concentrado em horários de intervalo entre aulas. | Média |
 | RNF05 | Compatibilidade | O sistema deve ser acessível via navegador em dispositivos Android e iOS, sem exigir instalação de aplicativo nativo. | Média |
 | RNF06 | Escalabilidade | O sistema deve suportar o crescimento do número de usuários simultâneos sem degradar o tempo de resposta do matchmaking. | Baixa |
+| RNF07 | Manutenibilidade | O código deve ser organizado em camadas para facilitar alterações futuras nas regras de negócio. | Alta |
+| RNF08 | Confiabilidade | As ações críticas, como fechamento de partidas e confirmação de participação, devem ser persistidas de forma consistente. | Alta |
 
 ## **5. Regras de Negócio**
 
-[Liste as regras de negócio que restringem ou orientam o comportamento do sistema, independentemente de um requisito funcional específico.]
-
 | ID | Descrição |
 | -- | --------- |
-| RN01 | [Descrição da regra de negócio] |
+| RN01 | O usuário deve informar pelo menos um esporte praticado para ativar o perfil de participação. |
+| RN02 | A marcação de disponibilidade deve considerar apenas horários futuros ou ainda válidos. |
+| RN03 | Uma partida só pode ser fechada quando atingir a quantidade mínima de participantes definida para o esporte ou tipo de evento. |
+| RN04 | Quando houver conflito entre duas atividades no mesmo horário, deve prevalecer a com maior número de interessados. |
+| RN05 | Caso não seja possível formar grupos homogêneos por nível, o sistema deve exibir o nível médio da partida. |
+| RN06 | Um usuário só pode participar de um evento se houver vagas disponíveis. |
+| RN07 | Eventos fechados não podem receber novos participantes, exceto se reabertos por um organizador. |
+| RN08 | O calendário do usuário deve exibir apenas eventos nos quais ele está participando, organizando ou foi convidado. |
 
 ## **6. Protótipos**
 
-[Insira aqui links ou imagens dos protótipos/wireframes que ilustram os requisitos funcionais.]
+Como o projeto é fictício e ainda não possui protótipos finalizados, esta seção pode ser complementada futuramente com wireframes, telas de baixa fidelidade ou links para protótipos no Figma.
