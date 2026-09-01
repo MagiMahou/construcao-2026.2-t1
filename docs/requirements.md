@@ -4,7 +4,7 @@
 
 |Data|Versão|Descrição|Autor|
 | - | - | - | - |
-|01/09/2026|0.1|Versão inicial preenchida com os requisitos do MoveUni|Gabriel Mendonça e Timóteo Stifft|
+|01/09/2026|0.1|Versão inicial preenchida com os requisitos do MoveUni|Gabriel Mendonça, Timóteo Stifft e Rafael Sasso|
 
 ## **1. Introdução**
 
