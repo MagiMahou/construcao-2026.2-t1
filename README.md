@@ -13,6 +13,7 @@ Seria feito também um sistema de nível (ex: iniciante, intermediário, avança
 | ---------------- | ------------------------ | ------------------------------------------------ | ----- | --------- |
 | Gabriel Mendonça | tavares.gabriel@pucrs.br | MagiMahou (https://github.com/MagiMahou)         | [Dev] | 23111360  |
 | Timóteo Stifft   | timoteo.meyer@pucrs.br   | timoteostifft (https://github.com/timoteostifft) | [Dev] | 23200109  |
+| Rafael Sasso     | rafael.sasso@edu.pucrs.br | RafaelSasso (https://github.com/RafaelSasso)     | [Dev] | 24200655  |
 
 ### Conheça nossa documentação
 
