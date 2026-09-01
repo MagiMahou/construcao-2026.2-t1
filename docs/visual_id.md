@@ -4,28 +4,35 @@
 
 |Data|Versão|Descrição|Autor|
 | - | - | - | - |
-|[dd/mm/aaaa]|0.1|Versão inicial|[Nome do autor]|
+|[01/09/2026]|0.1|Versão inicial|[Gabriel Mendonça]|
 
 ## Cores
 
-[Insira aqui a paleta de cores do produto. Ex.: `![Paleta de cores](./imagens/paleta_cores.png)`]
+[Paleta de cores](Telas/Paleta_de_Cores.png)`]
 
 #### Cores principais
+[#2A2C38] - Fundo das telas
 
-[Liste as cores principais e onde cada uma é utilizada na aplicação. Ex.: `#1F3541` — utilizada em navbars e headers.]
+[#3A5CBE] - Cor do degrade da Identidade principal
+
+[#433B90] - Cor do degrade da Identidade principal
+
 
 #### Cores secundárias
+[#808080] - Fonte das letras de Butões
 
-[Liste as cores secundárias e onde cada uma é utilizada. Ex.: `#FF0000` — utilizada em mensagens de erro e alertas.]
+[#FC7991] - Ícones de Esportes Populares
+
+[#FC7991] -  Ícones do Menu do Perfil
 
 ## Tipografia
 
-[Defina a(s) fonte(s) utilizada(s) na aplicação e os tamanhos padrão para título de página, subtítulos, botões e demais textos.]
+Fonte Usada: Poppins
 
-## Outros estilos definidos
+Tamnho Subtitulo: 12
 
-[Defina outros padrões visuais do produto, como border-radius de botões/cards/tabelas, espaçamentos e sombras.]
+Tamho Título: 20
 
 ## Icons
 
-[Defina qual biblioteca/conjunto de ícones será utilizado na aplicação.]
+A biblioteca usada será disponibilizada pela comunidade do Figma
